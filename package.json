@@ -33,6 +33,8 @@
   },
   "name": "aws-crons",
   "author": "Praveen Kumar",
+  "repository": "git:https://github.com/pkspyder007/aws-crons.git",
+  "description": "A simple wrapper for creating cron jobs using scheduled tasks in AWS.",
   "module": "dist/aws-crons.esm.js",
   "size-limit": [
     {
