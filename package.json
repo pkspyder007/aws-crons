@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,7 +36,13 @@
   "repository": "git:https://github.com/pkspyder007/aws-crons.git",
   "description": "A simple wrapper for creating cron jobs using scheduled tasks in AWS.",
   "homepage": "https://github.com/pkspyder007/aws-crons#README.md",
-  "keywords": ["aws", "crons", "aws-crons", "scheduled tasks", "aws-cdk"],
+  "keywords": [
+    "aws",
+    "crons",
+    "aws-crons",
+    "scheduled tasks",
+    "aws-cdk"
+  ],
   "module": "dist/aws-crons.esm.js",
   "size-limit": [
     {
