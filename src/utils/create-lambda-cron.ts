@@ -26,6 +26,7 @@ export const createLambdaCron = ({
     });
     newEventRule.addTarget(new targets.LambdaFunction(newLambda));
   } catch (error) {
-    throw new Error(error);
+    console.error(error);
+    throw new Error('Something went wrong while creating lambda cron...');
   }
 };
