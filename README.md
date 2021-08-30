@@ -43,7 +43,7 @@ export class CronCdkStack extends cdk.Stack {
                     SECRET: 'SSHHHH!!!'
                 }
             },
-            eventProps: {       // Event trigger config
+            eventRuleProps: {       // Event trigger config
                 schedule: Schedule.expression('rate(10 minutes)'),
                 ruleName: 'my_lambda_rule'
             }
