@@ -2,11 +2,11 @@ import * as targets from '@aws-cdk/aws-events-targets';
 import * as lambda from '@aws-cdk/aws-lambda';
 import * as events from '@aws-cdk/aws-events';
 import { Stack } from '@aws-cdk/core';
-import { Vpc } from '@aws-cdk/aws-ec2';
+import { IVpc, Vpc } from '@aws-cdk/aws-ec2';
 
 interface ILambdaCron {
   stack: Stack;
-  vpc?: Vpc;
+  vpc?: IVpc | Vpc;
   id: string;
   lambdaProps: lambda.FunctionProps;
   eventRuleProps: events.RuleProps;
