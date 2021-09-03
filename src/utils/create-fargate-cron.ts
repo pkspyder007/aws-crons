@@ -4,6 +4,7 @@ import {
   Volume,
   ContainerDefinitionOptions,
   MountPoint,
+  ICluster,
 } from '@aws-cdk/aws-ecs';
 import {
   ScheduledEc2TaskDefinitionOptions,
@@ -15,7 +16,7 @@ import { createLogDriver, createLogGroup, createCron } from './resources';
 
 interface IFargateTask {
   stack: Stack;
-  cluster: Cluster;
+  cluster: Cluster |ICluster;
   id: string;
   scheduledFargateTaskDefinitionOptions?: ScheduledEc2TaskDefinitionOptions;
   schedule: Schedule;
